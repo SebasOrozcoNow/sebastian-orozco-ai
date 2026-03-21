@@ -26,3 +26,8 @@ print(top_products, "\n")
 
 print("Sales by Category:")
 print(sales_by_category, "\n")
+
+with open ("data/processed/kpis.txt", "w") as f:
+  f.write(f"Total Revenue: {total_revenue}\n\n")
+  f.write("Revenue by Country:\n")
+  f.write(str(revenue_by_country))
