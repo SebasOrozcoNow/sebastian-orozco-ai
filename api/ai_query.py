@@ -6,8 +6,11 @@ client = anthropic.Anthropic(
 )
 
 def load_kpis():
-    with open("data/processed/kpis.txt", "r") as f:
-        return f.read()
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
+    file_path = os.path.join(BASE_DIR, "data", "processed", "kpis.txt")
+
+    with open(file_path, "r") as f:
+    return f.read()
 
 
 def build_prompt(question, context):
