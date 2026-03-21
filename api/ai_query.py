@@ -39,6 +39,6 @@ def ask_ai(question):
     return response.content[0].text
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     q = input("Ask: ")
     print(ask_ai(q))
