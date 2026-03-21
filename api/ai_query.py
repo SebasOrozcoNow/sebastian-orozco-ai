@@ -1,7 +1,8 @@
+import os
 import anthropic
 
 client = anthropic.Anthropic(
-    api_key="TU_API_KEY_AQUI"
+    api_key=os.getenv("ANTHROPIC_API_KEY")
 )
 
 def load_kpis():
@@ -41,9 +42,3 @@ def ask_ai(question):
 if _name_ == "_main_":
     q = input("Ask: ")
     print(ask_ai(q))
-
-if _name_ == "_main_":
-    question = input("Ask a business question: ")
-    answer = ask_ai(question)
-    print("\nAI Response:")
-    print(answer)
