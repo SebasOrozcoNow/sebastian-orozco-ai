@@ -1,1 +1,9 @@
 
+date,customer_id,product,category,price,quantity,country
+2024-01-01,1001,Shirt,Clothing,25,2,Spain
+2024-01-02,1002,Pants,Clothing,40,1,Spain
+2024-01-03,1003,Shoes,Footwear,60,1,France
+2024-01-04,1004,Hat,Accessories,15,3,Spain
+2024-01-05,1005,Jacket,Clothing,80,1,Germany
+2024-01-06,1006,Shoes,Footwear,60,2,Spain
+2024-01-07,1007,Shirt,Clothing,25,4,France
