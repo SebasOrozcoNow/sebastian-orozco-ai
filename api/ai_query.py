@@ -5,12 +5,12 @@ client = anthropic.Anthropic(
     api_key=os.getenv("ANTHROPIC_API_KEY")
 )
 
+
 def load_kpis():
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
     file_path = os.path.join(BASE_DIR, "data", "processed", "kpis.txt")
-
     with open(file_path, "r") as f:
-    return f.read()
+        return f.read()
 
 
 def build_prompt(question, context):
@@ -42,6 +42,6 @@ def ask_ai(question):
     return response.content[0].text
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     q = input("Ask: ")
     print(ask_ai(q))
