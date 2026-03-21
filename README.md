@@ -19,3 +19,9 @@ This project implements an end-to-end data pipeline using AWS and AI to generate
 
 ## Status
 🚧 In progress
+
+## ETL Process
+- Raw data ingestion from CSV
+- Data cleaning and transformation using Python (Pandas)
+- Output stored as processed dataset
+  
