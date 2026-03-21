@@ -7,7 +7,7 @@ client = anthropic.Anthropic(
 
 
 def load_kpis():
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     file_path = os.path.join(BASE_DIR, "data", "processed", "kpis.txt")
     with open(file_path, "r") as f:
         return f.read()
