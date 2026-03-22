@@ -1,27 +1,29 @@
 # sebastian-orozco-ai
-AI- Powered data pipeline using AWS, ETL processes, and LLM integration for business insights
-# AI Data Pipeline (AWS + LLM)
+
+# AI Data Pipeline with Claude
 
 ## Overview
-This project implements an end-to-end data pipeline using AWS and AI to generate business insights.
+This project demonstrates a complete data pipeline integrated with AI.
+
+## Features
+- ETL pipeline using Python (Pandas)
+- KPI generation from business data
+- AI-powered query system using Claude
+- Natural language interaction with structured data
+
+## Architecture
+Raw Data → ETL → Processed Data → KPIs → AI Query System
+
+## Example Questions
+- Which country has the highest revenue?
+- What are the top selling products?
 
 ## Tech Stack
 - Python
-- AWS (S3, Glue)
-- PySpark
-- SQL
-- LLM Integration (Claude-style)
+- Pandas
+- Claude (Anthropic API)
+- FastAPI (in progress)
 
-## Features
-- Data ingestion and transformation (ETL)
-- Data storage in cloud
-- AI-powered question answering over data
+## How to Run
 
-## Status
-🚧 In progress
-
-## ETL Process
-- Raw data ingestion from CSV
-- Data cleaning and transformation using Python (Pandas)
-- Output stored as processed dataset
-  
+1. Install dependencies:
