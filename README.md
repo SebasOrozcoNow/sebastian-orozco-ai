@@ -26,4 +26,12 @@ Raw Data → ETL → Processed Data → KPIs → AI Query System
 
 ## How to Run
 
-1. Install dependencies:
+1. Install dependencies: -/- pip install -r requirements.txt
+2. Run ETL:  -/- python scripts/process_data.py
+3. Generate KPIs: -/- python scripts/analyze_data.py
+4. Ask AI: python api/ai_query.py
+
+## Future Improvements
+- WhatsApp chatbot integration
+- API deployment
+- Dashboard visualization
